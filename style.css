@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Loved+by+the+King&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Krona+One&family=Loved+by+the+King&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --primary_color: #fff5b7;
+    --primary_font:  "Indie Flower";
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    }
+
+
+
+
+
+
+.fondo{
+    box-sizing: border-box;
+    background-color: var(--primary_color);
+    color: black;
+
+}
+
+.mensaje__titulo{
+    font-family: var(--primary_font);
+    font-size: 3.125rem;
+    text-align: center;
+    padding-top: 1.875rem;
+}
+
+.mensaje__imagen{
+    display: flex;
+    justify-content: center;
+    padding-top: 3.125rem;
+    filter: drop-shadow(0 0 3px #333);
+}
+
+.mensaje__imagen img {
+    width: 25rem;
+    height: 25rem;
+    animation: float 3s ease-in-out infinite; 
+
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+.imagen__texto__inferior{
+    text-align: center;
+    padding-top: 3.125rem;
+    font-family: var(--primary_font);
+    font-size: 23px;
+    font-weight: 600;
+    padding-left: 31.25rem;
+    padding-right: 31.25rem;
+}
+
+.header__menu{
+    background-color: rgb(255, 233, 108);
+    padding: 1% 0% 1% 20%;
+    display: flex;
+    gap: 5rem;
+    filter: drop-shadow(0 0 3px #333);
+}
+
+
+.header__menu__link{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    gap: 10px;
+    font-weight: 600;
+    font-family: var(--primary_font);
+}
+
+.carta_titulo{
+    font-family: var(--primary_font);
+    font-size: 3.125rem;
+    text-align: center;
+    padding-top: 1.875rem;
+}
+
+.carta_cuerpo{
+    text-align: center;
+    padding-top: 3.125rem;
+    font-family: var(--primary_font);
+    font-size: 23px;
+    font-weight: 600;
+    padding-left: 32rem;
+    padding-right: 32rem;
+}
+
+@media (max-width: 1200px){
+    .carta_cuerpo{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .imagen__texto__inferior{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    
+
+}
